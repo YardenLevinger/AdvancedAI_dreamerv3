@@ -6,6 +6,8 @@ hyperparameters.
 
 For reading the original [README.md](https://github.com/YardenLevinger/AdvancedAI_dreamerv3/blob/main/original_README.md)
 
+For accessing My reprocessing results: https://drive.google.com/drive/folders/1U2Kqf_41mbm4jKDVgQy-bScwhvT2i_6u?usp=drive_link
+
 ## Reprocessing
 
 Reprocessing Commands:
