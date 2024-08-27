@@ -1,4 +1,4 @@
-# AdvancedAI - Ex1
+# Yarden Levinger - Advanced AI - Ex1
 
 A reprocessing of [DreamerV3][paper], a scalable and general reinforcement
 learning algorithm that masters a wide range of applications with fixed
