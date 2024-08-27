@@ -88,7 +88,7 @@ defaults:
   # Agent
   report: True
   report_gradnorms: False
-  batch_size: 16
+  batch_size: 1 # Was 16
   batch_length: 65
   batch_length_eval: 33
   replay_length: 0
@@ -243,6 +243,14 @@ dmc_vision:
   run.steps: 6e5
   enc.spaces: 'image'
   dec.spaces: 'image'
+  
+dmc_vision_acr:
+  <<: *size12m
+  task: dmc_acrobot_swingup
+  run.train_ratio: 512
+  run.steps: 6e5
+  enc.spaces: 'image'
+  dec.spaces: 'image'
 
 bsuite:
   task: bsuite_mnist/0
@@ -270,14 +278,14 @@ multicpu:
   run:
     num_envs: 8
     actor_batch: 4
-  batch_size: 12
+  batch_size: 1 # Was 16
 
 debug:
   jax: {debug: True, jit: True, prealloc: False, platform: cpu, compute_dtype: bfloat16, profiler: False, checks: False}
   wrapper: {length: 100, checks: True}
   run: {num_envs: 4, eval_every: 10, log_every: 5, save_every: 15, train_ratio: 8, actor_batch: 2, driver_parallel: False}
   report_gradnorms: False
-  batch_size: 4
+  batch_size: 1 # Was 16
   batch_length: 12
   batch_length_eval: 12
   replay.size: 1e4
