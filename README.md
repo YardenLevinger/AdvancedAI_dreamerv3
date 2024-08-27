@@ -1,4 +1,4 @@
-# AdvancedAI - EX 1
+# AdvancedAI - Ex1
 
 A reprocessing of [DreamerV3][paper], a scalable and general reinforcement
 learning algorithm that masters a wide range of applications with fixed
